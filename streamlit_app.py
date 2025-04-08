@@ -359,11 +359,6 @@ st.plotly_chart(fig,use_container_width=True)
 
 # df = df_sorted
 
-st.markdown('### Voltage')
-fig = px.line(df, x="created_at", y="voltage", title='',markers=True, color_discrete_sequence=['red'])
-
-fig.update_traces(marker=dict(color='white'))
-
 # fig.update_layout(
     # xaxis=dict(rangeselector=dict(
         # buttons=list(
