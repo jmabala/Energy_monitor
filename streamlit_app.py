@@ -37,8 +37,6 @@ st.map(df[['latitude', 'longitude']], use_container_width=True)
 
 df = df.tail(30)
 
-st.set_page_config(page_title="Visualisation", layout="wide")
-
 # st.markdown(df)
 
 # st.sidebar.header("Visualisation")
