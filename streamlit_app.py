@@ -71,22 +71,22 @@ st.plotly_chart(fig,use_container_width=True, theme="streamlit")
 
 st.markdown('### Current')
 fig = px.line(df, x="created_at", y="current", title='',markers=True, color_discrete_sequence=['red'])
-fig.update_traces(marker=dict(color='white'))
+fig.update_traces(marker=dict(color='black'))
 st.plotly_chart(fig,use_container_width=True)
 
 st.markdown('### Power')
 fig = px.line(df, x="created_at", y="power", title='',markers=True, color_discrete_sequence=['red'])
-fig.update_traces(marker=dict(color='white'))
+fig.update_traces(marker=dict(color='black'))
 st.plotly_chart(fig,use_container_width=True)
 
 st.markdown('### Energy')
 fig = px.line(df, x="created_at", y="energy", title='',markers=True, color_discrete_sequence=['red'])
-fig.update_traces(marker=dict(color='white'))
+fig.update_traces(marker=dict(color='black'))
 st.plotly_chart(fig,use_container_width=True)
 
 st.markdown('### hours')
 fig = px.line(df, x="created_at", y="hours",markers=True, title='', color_discrete_sequence=['red'])
-fig.update_traces(marker=dict(color='white'))
+fig.update_traces(marker=dict(color='black'))
 st.plotly_chart(fig,use_container_width=True)
 
 # st.area_chart(
