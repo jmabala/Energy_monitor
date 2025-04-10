@@ -45,7 +45,7 @@ df = df.tail(30)
 
 # df = df_sorted
 
-st.markdown(df['days'].tail() + " :" + df['hours'].tail() + " :" + df['minutes'].tail())
+# st.markdown(df['days'].tail() + " :" + df['hours'].tail() + " :" + df['minutes'].tail())
 
 st.markdown('### Voltage')
 fig = px.line(df, x="created_at", y="voltage", title='',markers=True, color_discrete_sequence=['red'])
